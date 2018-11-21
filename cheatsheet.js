@@ -75,3 +75,13 @@ Cypress.Commands.add("mount", (jsx) => {
         cy.then(() => Cypress._component)
     })
 });
+
+import React from 'react'
+import { HelloWorld } from '../../HelloWorld';
+
+describe('unit test', () => {
+  it('renders the todo', () => {
+    cy.mount(<HelloWorld />)
+    cy.contains('Hello World')
+  });
+});
