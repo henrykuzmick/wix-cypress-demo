@@ -37,6 +37,7 @@ export default class NewTodo extends Component {
 				<input
 					id="new-todo"
 					placeholder="What needs to be done?"
+					data-hook="new-todo"
 					onBlur={ this.handleBlur }
 					onKeyUp={ this.handleKeyup } />
 			</header>
