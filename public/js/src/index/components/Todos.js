@@ -10,7 +10,7 @@ export default class Todos extends React.Component {
 	render() {
 		console.log('Todos rendering')
 		let { todos } = this.props
-		return <ul id="todo-list">{
+		return <ul id="todo-list" data-hook="todo-list">{
 			todos.map(id =>
 				<Todo id={ id } key={ id } />
 			)
